@@ -75,3 +75,92 @@ asset-security-monitoring/
 ```bash
 git clone https://github.com/Quantumdynamosmvp/asset-security-monitoring.git
 cd asset-security-monitoring
+```
+2️⃣ Create Virtual Environment (Recommended)
+Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+Linux / macOS
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+⚠️ On first run, YOLOv8 weights (yolov8n.pt) will download automatically.
+
+▶️ Run the Project
+```bash
+python main.py
+```
+```bash
+Press ESC to stop the application
+
+Logs will be saved in logs.txt
+
+Video recordings will be saved automatically
+
+📊 Sample Log Output
+```bash
+[2026-02-02 15:40:01] Object appeared: backpack (ID 3)
+[2026-02-02 15:40:12] Abandoned object: backpack (ID 3)
+[2026-02-02 15:40:30] Object removed: backpack (ID 3)
+```
+❌ Common Issues & Fixes
+Camera not opening
+
+Try changing the camera index in main.py:
+
+cap = cv2.VideoCapture(1)
+
+pip not recognized (Windows)
+```bash
+python -m pip install -r requirements.txt
+```
+
+⚠️ Limitations
+
+Object IDs are temporary (not real-world identity)
+
+Performance depends on lighting and camera quality
+
+Face recognition is not included (future scope)
+
+🔮 Future Enhancements
+
+Face recognition for suspect identification
+
+Object re-identification across cameras
+
+Email / SMS alerts
+
+Web dashboard for logs and recordings
+
+Cloud storage integration
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+
+Quantumdynamosmvp
+AI & Computer Vision Project
+
+
+---
+
+## ✅ LAST STEP (Push to GitHub)
+
+CMD me run kar:
+
+```bat
+git add README.md
+git commit -m "Fixed README formatting with proper command blocks"
+git push
