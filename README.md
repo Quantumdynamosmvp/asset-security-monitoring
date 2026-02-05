@@ -107,7 +107,6 @@ Logs will be saved in logs.txt
 Video recordings will be saved automatically
 
 📊 Sample Log Output
-```bash
 [2026-02-02 15:40:01] Object appeared: backpack (ID 3)
 [2026-02-02 15:40:12] Abandoned object: backpack (ID 3)
 [2026-02-02 15:40:30] Object removed: backpack (ID 3)
@@ -116,9 +115,9 @@ Video recordings will be saved automatically
 Camera not opening
 
 Try changing the camera index in main.py:
-
+```bash
 cap = cv2.VideoCapture(1)
-
+```
 pip not recognized (Windows)
 ```bash
 python -m pip install -r requirements.txt
